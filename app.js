@@ -71,7 +71,7 @@
                     <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 space-y-4 text-center">
                         <p class="text-lg font-medium text-slate-200 italic">"Simplicity is prerequisite for reliability."</p>
                         <p class="text-sm font-semibold text-brand-400">— Edsger W. Dijkstra</p>
-                        <button data-demo="quote" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold">
+                        <button data-demo="quote" class="action-primary px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold">
                             Generate Another Quote
                         </button>
                     </div>
@@ -97,24 +97,6 @@
         function closeDemo() {
             demoModal.classList.add('hidden');
         }
-
-        // Contact form submit logic without alert()
-        const form = document.getElementById('contact-form');
-        const formMessage = document.getElementById('form-message');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            formMessage.className = "p-4 rounded-2xl text-center text-sm font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 block";
-            formMessage.textContent = "Thank you! Your message has been sent to Sheron Ndimande. I will respond to your email shortly!";
-
-            form.reset();
-
-            setTimeout(() => {
-                formMessage.classList.add('hidden');
-            }, 6000);
-        });
-
 
 document.addEventListener('click', (event) => {
     const target = event.target;

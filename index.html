@@ -26,21 +26,21 @@
             </a>
             
             <ul class="hidden md:flex items-center gap-8 font-medium text-slate-300 text-sm tracking-wide">
-                <li><a href="#about" class="hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">About</a></li>
-                <li><a href="#skills" class="hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">Skills</a></li>
-                <li><a href="#projects" class="hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">Projects</a></li>
-                <li><a href="#contact" class="hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">Contact</a></li>
+                <li><a href="#about" class="nav-link hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">About</a></li>
+                <li><a href="#skills" class="nav-link hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">Skills</a></li>
+                <li><a href="#projects" class="nav-link hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">Projects</a></li>
+                <li><a href="#contact" class="nav-link hover:text-brand-300 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-400 hover:after:w-full after:transition-all">Contact</a></li>
             </ul>
 
             <div class="hidden sm:flex items-center gap-4">
-                <a href="#contact" class="relative inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 shadow-lg shadow-brand-600/30 transition-all hover:scale-105 active:scale-95 group overflow-hidden">
+                <a href="#contact" class="action-primary relative inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 shadow-lg shadow-brand-600/30 transition-all hover:scale-105 active:scale-95 group overflow-hidden">
                     <span class="relative z-10">Get in Touch</span>
                     <div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden p-2 text-slate-300 hover:text-white focus:outline-none rounded-lg bg-slate-900 border border-slate-800" aria-label="Toggle Menu">
+            <button id="menu-btn" class="menu-toggle md:hidden p-2 text-slate-300 hover:text-white focus:outline-none rounded-lg bg-slate-900 border border-slate-800" aria-label="Toggle Menu">
                 <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
@@ -53,7 +53,7 @@
             <a href="#skills" class="mobile-link py-2 border-b border-slate-800/50 hover:text-brand-400 transition-colors">Skills</a>
             <a href="#projects" class="mobile-link py-2 border-b border-slate-800/50 hover:text-brand-400 transition-colors">Projects</a>
             <a href="#contact" class="mobile-link py-2 hover:text-brand-400 transition-colors">Contact</a>
-            <a href="#contact" class="mobile-link text-center py-3 rounded-xl bg-brand-600 text-white font-semibold shadow-md shadow-brand-500/20 mt-2">Get in Touch</a>
+            <a href="#contact" class="mobile-link action-primary text-center py-3 rounded-xl bg-brand-600 text-white font-semibold shadow-md shadow-brand-500/20 mt-2">Get in Touch</a>
         </div>
     </header>
 
@@ -104,11 +104,11 @@
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                        <a href="#projects" class="px-8 py-4 rounded-full bg-brand-600 hover:bg-brand-500 text-white font-bold shadow-xl shadow-brand-600/30 hover:shadow-brand-500/50 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <a href="#projects" class="action-primary px-8 py-4 rounded-full bg-brand-600 hover:bg-brand-500 text-white font-bold shadow-xl shadow-brand-600/30 hover:shadow-brand-500/50 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
                             <span>Explore Featured Work</span>
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </a>
-                        <a href="#contact" class="px-8 py-4 rounded-full glass-dark text-white font-semibold border border-slate-700 hover:border-brand-500/50 hover:bg-slate-900/90 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <a href="#contact" class="action-secondary px-8 py-4 rounded-full glass-dark text-white font-semibold border border-slate-700 hover:border-brand-500/50 hover:bg-slate-900/90 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
                             <span>Let's Talk</span>
                         </a>
                     </div>
@@ -146,9 +146,9 @@
                             <!-- Avatar & Interactive Preview -->
                             <div class="relative flex-1 my-3 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/60 group-hover:border-brand-500/40 transition-colors">
                                 <img 
-                                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                                    src="images/me.jpg"
                                     alt="Sheron Ndimande Developer Profile" 
-                                    class="w-full h-full object-cover object-center filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                    class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                                     data-fallback="https://placehold.co/400x400/6d28d9/ffffff?text=Sheron+Ndimande"
                                 />
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
@@ -196,20 +196,20 @@
                     <!-- Key Metrics Grid -->
                     <div class="lg:col-span-5 grid grid-cols-2 gap-4">
                         <div class="p-6 rounded-2xl glass-dark border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group text-center space-y-2">
-                            <span class="block text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-brand-400 to-purple-300 bg-clip-text text-transparent group-hover:scale-110 transition-transform">1+</span>
-                            <span class="text-sm text-slate-400 font-medium">Years Experience</span>
+                            <span class="metric-value metric-experience block text-4xl sm:text-5xl font-extrabold group-hover:scale-110 transition-transform">1+</span>
+                            <span class="metric-label text-sm font-medium">Years of Experience</span>
                         </div>
                         <div class="p-6 rounded-2xl glass-dark border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group text-center space-y-2">
-                            <span class="block text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-brand-400 to-purple-300 bg-clip-text text-transparent group-hover:scale-110 transition-transform">10+</span>
-                            <span class="text-sm text-slate-400 font-medium">Completed Projects</span>
+                            <span class="metric-value metric-projects block text-4xl sm:text-5xl font-extrabold group-hover:scale-110 transition-transform">10+</span>
+                            <span class="metric-label text-sm font-medium">Completed Projects</span>
                         </div>
                         <div class="p-6 rounded-2xl glass-dark border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group text-center space-y-2">
-                            <span class="block text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-brand-400 to-purple-300 bg-clip-text text-transparent group-hover:scale-110 transition-transform">100%</span>
-                            <span class="text-sm text-slate-400 font-medium">Responsive Focus</span>
+                            <span class="metric-value metric-responsive block text-4xl sm:text-5xl font-extrabold group-hover:scale-110 transition-transform">100%</span>
+                            <span class="metric-label text-sm font-medium">Responsive Focus</span>
                         </div>
                         <div class="p-6 rounded-2xl glass-dark border border-slate-800 hover:border-brand-500/40 transition-all duration-300 group text-center space-y-2">
-                            <span class="block text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-brand-400 to-purple-300 bg-clip-text text-transparent group-hover:scale-110 transition-transform">24/7</span>
-                            <span class="text-sm text-slate-400 font-medium">Continuous Learning</span>
+                            <span class="metric-value metric-learning block text-4xl sm:text-5xl font-extrabold group-hover:scale-110 transition-transform">24/7</span>
+                            <span class="metric-label text-sm font-medium">Continuous Learning</span>
                         </div>
                     </div>
 
@@ -343,7 +343,7 @@
                             <!-- Card Header Image Container -->
                             <div class="relative overflow-hidden h-56 sm:h-64 bg-slate-950">
                                 <img 
-                                    src="https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=800&q=80" 
+                                    src="images/weather.png"
                                     alt="Weather App Preview" 
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                                     data-fallback="https://placehold.co/800x500/6d28d9/ffffff?text=Weather+App"
@@ -356,7 +356,7 @@
 
                             <div class="p-6 sm:p-8 space-y-4">
                                 <div class="flex items-center justify-between">
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors">1. Weather App</h3>
+                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors"> Weather App</h3>
                                 </div>
                                 <p class="text-slate-300 text-sm leading-relaxed">
                                     A responsive weather application fetching real-time temperature, condition forecasts, humidity, and atmospheric wind speeds for any city using OpenWeather API integration.
@@ -370,7 +370,7 @@
                         </div>
 
                         <div class="p-6 sm:p-8 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-4">
-                            <button data-demo="weather" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
+                            <button data-demo="weather" class="action-link inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
                                 <span>Try Interactive Preview</span>
                                 <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                             </button>
@@ -383,7 +383,7 @@
                             <!-- Card Header Image Container -->
                             <div class="relative overflow-hidden h-56 sm:h-64 bg-slate-950">
                                 <img 
-                                    src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" 
+                                    src="images/dictionary.png"
                                     alt="Dictionary App Preview" 
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                                     data-fallback="https://placehold.co/800x500/7c3aed/ffffff?text=Dictionary+App"
@@ -396,7 +396,7 @@
 
                             <div class="p-6 sm:p-8 space-y-4">
                                 <div class="flex items-center justify-between">
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors">2. Dictionary App</h3>
+                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors"> Dictionary App</h3>
                                 </div>
                                 <p class="text-slate-300 text-sm leading-relaxed">
                                     An interactive dictionary web app that provides word definitions, phonetic pronunciations with audio playback, synonyms, antonyms, and example usage sentences.
@@ -410,7 +410,7 @@
                         </div>
 
                         <div class="p-6 sm:p-8 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-4">
-                            <button data-demo="dictionary" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
+                            <button data-demo="dictionary" class="action-link inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
                                 <span>Try Interactive Preview</span>
                                 <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                             </button>
@@ -423,7 +423,7 @@
                             <!-- Card Header Image Container -->
                             <div class="relative overflow-hidden h-56 sm:h-64 bg-slate-950">
                                 <img 
-                                    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" 
+                                    src="images/quote.png"
                                     alt="Quote Generator Preview" 
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                                     data-fallback="https://placehold.co/800x500/8b5cf6/ffffff?text=Quote+Generator"
@@ -436,7 +436,7 @@
 
                             <div class="p-6 sm:p-8 space-y-4">
                                 <div class="flex items-center justify-between">
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors">3. Quote Generator</h3>
+                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors"> Quote Generator</h3>
                                 </div>
                                 <p class="text-slate-300 text-sm leading-relaxed">
                                     A inspirational web generator featuring random quotes, author quotes, smooth UI transitions, fast clipboard copying, and social media sharing tools.
@@ -450,10 +450,10 @@
                         </div>
 
                         <div class="p-6 sm:p-8 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-4">
-                            <button data-demo="quote" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
+                            <a href="https://ai-quote-generator-1-vykv.onrender.com" target="_blank" rel="noopener noreferrer" class="action-link inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
                                 <span>Try Interactive Preview</span>
                                 <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -463,7 +463,7 @@
                             <!-- Card Header Image Container -->
                             <div class="relative overflow-hidden h-56 sm:h-64 bg-slate-950">
                                 <img 
-                                    src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=800&q=80" 
+                                    src="images/world clock.png"
                                     alt="World Live Clock Preview" 
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                                     data-fallback="https://placehold.co/800x500/a78bfa/ffffff?text=World+Live+Clock"
@@ -476,7 +476,7 @@
 
                             <div class="p-6 sm:p-8 space-y-4">
                                 <div class="flex items-center justify-between">
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors">4. World Live Clock</h3>
+                                    <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors"> World Live Clock</h3>
                                 </div>
                                 <p class="text-slate-300 text-sm leading-relaxed">
                                     A dynamic global live clock displaying real-time clock tickers for international time zones including Johannesburg, London, New York, and Tokyo.
@@ -490,10 +490,10 @@
                         </div>
 
                         <div class="p-6 sm:p-8 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-4">
-                            <button data-demo="clock" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
+                            <a href="https://live-world-clock.onrender.com" target="_blank" rel="noopener noreferrer" class="action-link inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 transition-colors group/btn">
                                 <span>Try Interactive Preview</span>
                                 <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -506,7 +506,7 @@
                 
                 <div class="flex items-center justify-between border-b border-slate-800 pb-4">
                     <h3 id="modal-title" class="text-xl font-bold text-white">Project Interactive Preview</h3>
-                    <button data-close-demo class="p-2 text-slate-400 hover:text-white rounded-lg bg-slate-800 hover:bg-slate-700">
+                    <button data-close-demo class="action-muted p-2 text-slate-400 hover:text-white rounded-lg bg-slate-800 hover:bg-slate-700">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                     </button>
                 </div>
@@ -517,68 +517,57 @@
                 </div>
 
                 <div class="pt-2 text-right">
-                    <button data-close-demo class="px-5 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold">
+                    <button data-close-demo class="action-muted px-5 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold">
                         Close Preview
                     </button>
                 </div>
             </div>
         </div>
 
-        <section id="contact" class="py-24 px-6 bg-slate-950 relative">
-            <div class="max-w-4xl mx-auto space-y-12">
-                
-                <div class="text-center space-y-3">
-                    <span class="text-brand-400 font-mono text-xs tracking-widest uppercase font-semibold">Start a Conversation</span>
-                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Get In Touch</h2>
-                    <p class="text-slate-400 max-w-md mx-auto text-sm sm:text-base">Have a project or front-end position in mind? Feel free to reach out anytime!</p>
-                    <div class="w-20 h-1.5 bg-gradient-to-r from-brand-600 to-purple-400 mx-auto rounded-full"></div>
+        <section id="contact" class="contact-section py-24 px-6 relative isolate overflow-hidden">
+            <div class="contact-orb contact-orb-cyan" aria-hidden="true"></div>
+            <div class="contact-orb contact-orb-purple" aria-hidden="true"></div>
+            <div class="max-w-5xl mx-auto">
+                <div class="contact-panel grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center p-7 sm:p-10 lg:p-14">
+                    <div class="space-y-6 text-center lg:text-left">
+                        <span class="contact-status inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-xs font-semibold tracking-wide">
+                            <span class="contact-status-dot w-2 h-2 rounded-full"></span>
+                            Open to opportunities
+                        </span>
+                        <div class="space-y-4">
+                            <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight text-white">Let's make your next idea <span class="contact-heading-accent">happen.</span></h2>
+                            <p class="max-w-lg mx-auto lg:mx-0 text-base sm:text-lg leading-relaxed text-slate-300">Have a project in mind or looking for a front-end developer? I’d love to hear from you.</p>
+                        </div>
+                        <p class="text-sm text-slate-400">Choose the easiest way to reach me.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-4">
+                        <a href="tel:0633523844" class="contact-method contact-method-phone group flex items-center gap-4 rounded-2xl p-5 sm:p-6">
+                            <span class="contact-icon contact-icon-phone flex h-12 w-12 shrink-0 items-center justify-center rounded-xl">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372a1.125 1.125 0 00-.852-1.093l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a1.125 1.125 0 01-1.21.398 12.035 12.035 0 01-7.207-7.207 1.125 1.125 0 01.398-1.21l1.293-.97a1.125 1.125 0 00.417-1.173L6.917 3.052a1.125 1.125 0 00-1.093-.852H4.5A2.25 2.25 0 002.25 4.45v2.3z"/>
+                                </svg>
+                            </span>
+                            <span class="min-w-0 flex-1">
+                                <span class="block text-xs font-mono uppercase tracking-widest text-cyan-300">Call or message</span>
+                                <span class="mt-1 block text-lg sm:text-xl font-semibold text-white transition-colors group-hover:text-cyan-200">0633523844</span>
+                            </span>
+                            <svg class="contact-arrow h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 17 17 7M7 7h10v10"/></svg>
+                        </a>
+                        <a href="mailto:sheron.93@yahoo.com" class="contact-method contact-method-email group flex items-center gap-4 rounded-2xl p-5 sm:p-6">
+                            <span class="contact-icon contact-icon-email flex h-12 w-12 shrink-0 items-center justify-center rounded-xl">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0l-8.22 5.22a1.875 1.875 0 01-2.01 0L2.25 6.75"/>
+                                </svg>
+                            </span>
+                            <span class="min-w-0 flex-1">
+                                <span class="block text-xs font-mono uppercase tracking-widest text-brand-300">Email me</span>
+                                <span class="mt-1 block break-all text-lg sm:text-xl font-semibold text-white transition-colors group-hover:text-brand-200">sheron.93@yahoo.com</span>
+                            </span>
+                            <svg class="contact-arrow h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 17 17 7M7 7h10v10"/></svg>
+                        </a>
+                    </div>
                 </div>
-
-                <!-- Custom Inline Form Notification Box -->
-                <div id="form-message" class="hidden p-4 rounded-2xl text-center text-sm font-medium transition-all"></div>
-
-                <form id="contact-form" class="p-8 sm:p-12 rounded-3xl glass-dark border border-slate-800 shadow-2xl space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <label for="name" class="block text-sm font-medium text-slate-300">Your Name</label>
-                            <input 
-                                type="text" 
-                                id="name" 
-                                required
-                                placeholder="e.g. Alex Morgan" 
-                                class="w-full px-4 py-3.5 rounded-xl border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-slate-900/90 text-white placeholder-slate-500 transition"
-                            />
-                        </div>
-                        <div class="space-y-2">
-                            <label for="email" class="block text-sm font-medium text-slate-300">Email Address</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                required
-                                placeholder="alex@example.com" 
-                                class="w-full px-4 py-3.5 rounded-xl border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-slate-900/90 text-white placeholder-slate-500 transition"
-                            />
-                        </div>
-                    </div>
-
-                    <div class="space-y-2">
-                        <label for="message" class="block text-sm font-medium text-slate-300">Message</label>
-                        <textarea 
-                            id="message" 
-                            rows="5" 
-                            required
-                            placeholder="Tell me about your website needs or project..." 
-                            class="w-full px-4 py-3.5 rounded-xl border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-slate-900/90 text-white placeholder-slate-500 transition resize-none"
-                        ></textarea>
-                    </div>
-
-                    <button 
-                        type="submit" 
-                        class="w-full py-4 rounded-xl text-white font-bold bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 shadow-xl shadow-brand-600/30 transition-all hover:scale-[1.01] active:scale-[0.99]"
-                    >
-                        Send Message
-                    </button>
-                </form>
             </div>
         </section>
     </main>
@@ -592,16 +581,16 @@
 
             <!-- Quick Access Social Links in Footer -->
             <div class="flex items-center gap-3">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-all hover:-translate-y-1">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link social-github w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center transition-all hover:-translate-y-1">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-all hover:-translate-y-1">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link social-linkedin w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center transition-all hover:-translate-y-1">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-all hover:-translate-y-1">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-link social-twitter w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center transition-all hover:-translate-y-1">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
-                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 hover:bg-brand-600 text-slate-300 hover:text-white flex items-center justify-center transition-all hover:-translate-y-1">
+                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble" class="social-link social-dribbble w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 flex items-center justify-center transition-all hover:-translate-y-1">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 6.01a8.12 8.12 0 0 0-3.32-2.12c-.22.51-.47 1.05-.75 1.61 1.62.67 3.01 1.5 4.07 2.51zM12 3.92c1.78 0 3.41.58 4.73 1.56-1.02-.95-2.33-1.72-3.88-2.34a26.6 26.6 0 0 0-.85 1.78 28.52 28.52 0 0 0 0 0zM8.54 5.34c.31-.6.64-1.16.98-1.68A8.09 8.09 0 0 0 3.92 12c0-.12.01-.24.01-.36 1.72-.37 3.58-.36 5.38.25.13-.5.27-1.01.42-1.52A18.88 18.88 0 0 1 8.54 5.34zM3.92 13.56c1.68-.54 3.45-.53 5.09-.15-.43 1.25-.97 2.47-1.61 3.61a8.08 8.08 0 0 1-3.48-3.46zm5.8 4.69c.61-1.09 1.12-2.25 1.53-3.44a17.2 17.2 0 0 1 4.54 3.03 8.06 8.06 0 0 1-6.07.41zm7.25-1.48c-1.3-1.09-2.73-1.95-4.22-2.58a18.4 18.4 0 0 0-.37-1.21c1.88-.31 3.92-.12 5.92.59a8.08 8.08 0 0 1-1.33 3.2zm1.88-4.73a19.7 19.7 0 0 0-5.46-.57c.12-.41.24-.82.34-1.23a19.8 19.8 0 0 0 4.14-1.89 8.09 8.09 0 0 1 1.02 3.69z"/></svg>
                 </a>
             </div>
