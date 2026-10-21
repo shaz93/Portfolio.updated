@@ -1,0 +1,25 @@
+/* Custom scrollbar & glassmorphism utilities */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #6d28d9; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
+
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(221, 214, 254, 0.5);
+        }
+        .hero-grid-pattern {
+            background-image: radial-gradient(rgba(139, 92, 246, 0.18) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .code-glow {
+            box-shadow: 0 0 40px -10px rgba(124, 58, 237, 0.4);
+        }
