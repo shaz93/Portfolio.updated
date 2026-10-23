@@ -118,17 +118,21 @@
             background: linear-gradient(135deg, #10b981, #059669);
             box-shadow: 0 14px 30px rgba(5, 150, 105, 0.3);
         }
+        .contact-email-submit {
+            border: 1px solid rgba(167, 139, 250, 0.4);
+            color: #ddd6fe;
+            background: rgba(124, 58, 237, 0.16);
+        }
+        .contact-email-submit:hover {
+            transform: translateY(-1px);
+            border-color: rgba(196, 181, 253, 0.75);
+            color: #fff;
+            background: rgba(124, 58, 237, 0.3);
+        }
         .contact-submit:focus-visible,
-        .contact-email-link:focus-visible {
+        .contact-email-submit:focus-visible {
             outline: 2px solid #6ee7b7;
             outline-offset: 4px;
-        }
-        .contact-email-link {
-            color: #c4b5fd;
-        }
-        .contact-email-link:hover {
-            color: #ddd6fe;
-            text-decoration: underline;
         }
 
         .metric-value {
@@ -233,7 +237,8 @@
                 transition: none;
             }
             .contact-message-input,
-            .contact-submit {
+            .contact-submit,
+            .contact-email-submit {
                 transition: none;
             }
         }

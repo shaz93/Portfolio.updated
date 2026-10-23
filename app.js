@@ -119,3 +119,14 @@ document.querySelectorAll('img[data-fallback]').forEach((image) => {
         image.removeAttribute('data-fallback');
     }, { once: true });
 });
+
+const contactMessage = document.getElementById('contact-message');
+const emailMessageButton = document.getElementById('contact-email-submit');
+
+emailMessageButton.addEventListener('click', () => {
+    if (!contactMessage.reportValidity()) return;
+
+    const subject = encodeURIComponent('Portfolio contact');
+    const body = encodeURIComponent(contactMessage.value.trim());
+    window.location.href = `mailto:sheron.93@yahoo.com?subject=${subject}&body=${body}`;
+});
