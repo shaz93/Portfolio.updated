@@ -100,6 +100,12 @@
             background: rgba(124, 58, 237, 0.1);
             box-shadow: 0 12px 32px rgba(124, 58, 237, 0.1);
         }
+        .contact-method-whatsapp:hover {
+            transform: translateY(-2px);
+            border-color: rgba(52, 211, 153, 0.55);
+            background: rgba(5, 150, 105, 0.1);
+            box-shadow: 0 12px 32px rgba(5, 150, 105, 0.1);
+        }
         .contact-icon-phone {
             background: rgba(8, 145, 178, 0.16);
             color: #67e8f9;
@@ -107,6 +113,10 @@
         .contact-icon-email {
             background: rgba(124, 58, 237, 0.18);
             color: #c4b5fd;
+        }
+        .contact-icon-whatsapp {
+            background: rgba(5, 150, 105, 0.18);
+            color: #6ee7b7;
         }
         .contact-arrow {
             color: #64748b;
@@ -119,6 +129,10 @@
         .contact-method-email:hover .contact-arrow {
             transform: translate(2px, -2px);
             color: #c4b5fd;
+        }
+        .contact-method-whatsapp:hover .contact-arrow {
+            transform: translate(2px, -2px);
+            color: #6ee7b7;
         }
         .contact-method:focus-visible {
             outline: 2px solid #67e8f9;
