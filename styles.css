@@ -89,65 +89,46 @@
         .contact-heading-accent {
             color: #c4b5fd;
         }
-        .contact-method {
-            min-width: 0;
+        .contact-form-card {
+            padding: 1.5rem;
             border: 1px solid rgba(148, 163, 184, 0.2);
-            background: rgba(2, 6, 23, 0.42);
-            text-decoration: none;
-            transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+            border-radius: 1.5rem;
+            background: rgba(2, 6, 23, 0.48);
+            box-shadow: 0 20px 50px rgba(2, 6, 23, 0.2);
         }
-        .contact-methods {
-            padding: 0.25rem;
+        .contact-message-input {
+            resize: vertical;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            background: rgba(15, 23, 42, 0.8);
+            transition: border-color 180ms ease, box-shadow 180ms ease;
         }
-        .contact-method-phone:hover {
-            transform: translateY(-2px);
-            border-color: rgba(34, 211, 238, 0.55);
-            background: rgba(8, 145, 178, 0.1);
-            box-shadow: 0 12px 32px rgba(8, 145, 178, 0.1);
+        .contact-message-input:focus {
+            border-color: #34d399;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.16);
         }
-        .contact-method-email:hover {
-            transform: translateY(-2px);
-            border-color: rgba(167, 139, 250, 0.55);
-            background: rgba(124, 58, 237, 0.1);
-            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.1);
+        .contact-submit {
+            border: 1px solid rgba(52, 211, 153, 0.4);
+            background: linear-gradient(135deg, #059669, #047857);
+            box-shadow: 0 10px 26px rgba(5, 150, 105, 0.2);
         }
-        .contact-method-whatsapp:hover {
-            transform: translateY(-2px);
-            border-color: rgba(52, 211, 153, 0.55);
-            background: rgba(5, 150, 105, 0.1);
-            box-shadow: 0 12px 32px rgba(5, 150, 105, 0.1);
+        .contact-submit:hover {
+            transform: translateY(-1px);
+            border-color: rgba(110, 231, 183, 0.75);
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 14px 30px rgba(5, 150, 105, 0.3);
         }
-        .contact-icon-phone {
-            background: rgba(8, 145, 178, 0.16);
-            color: #67e8f9;
-        }
-        .contact-icon-email {
-            background: rgba(124, 58, 237, 0.18);
-            color: #c4b5fd;
-        }
-        .contact-icon-whatsapp {
-            background: rgba(5, 150, 105, 0.18);
-            color: #6ee7b7;
-        }
-        .contact-arrow {
-            color: #64748b;
-            transition: color 180ms ease, transform 180ms ease;
-        }
-        .contact-method-phone:hover .contact-arrow {
-            transform: translate(2px, -2px);
-            color: #67e8f9;
-        }
-        .contact-method-email:hover .contact-arrow {
-            transform: translate(2px, -2px);
-            color: #c4b5fd;
-        }
-        .contact-method-whatsapp:hover .contact-arrow {
-            transform: translate(2px, -2px);
-            color: #6ee7b7;
-        }
-        .contact-method:focus-visible {
-            outline: 2px solid #67e8f9;
+        .contact-submit:focus-visible,
+        .contact-email-link:focus-visible {
+            outline: 2px solid #6ee7b7;
             outline-offset: 4px;
+        }
+        .contact-email-link {
+            color: #c4b5fd;
+        }
+        .contact-email-link:hover {
+            color: #ddd6fe;
+            text-decoration: underline;
         }
 
         .metric-value {
@@ -251,8 +232,8 @@
             .social-link {
                 transition: none;
             }
-            .contact-method,
-            .contact-arrow {
+            .contact-message-input,
+            .contact-submit {
                 transition: none;
             }
         }
